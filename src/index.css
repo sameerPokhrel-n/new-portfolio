@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #fd6f00 !important;
+}
+.slick-dots li button:before {
+  color: #fd6f00 !important;
+  padding-top: 1em !important;
+  font-size: large !important;
+}
+input {
+  @apply px-6 py-3 text-sm focus:outline-none focus:outline-secondary focus:ring-2 focus:ring-offset-2 border border-transparent dark:border-secondaryDim border-secondaryDim transition ease-in-out duration-300 rounded-[5px];
+}
+textarea {
+  @apply px-6 py-3 !min-h-[6rem] text-sm focus:outline-none focus:outline-secondary focus:ring-2 focus:ring-offset-2 border border-transparent dark:border-secondaryDim border-secondaryDim transition ease-in-out duration-300 rounded-[5px];
+}
+
+.progress-bar {
+  @apply fixed top-0 left-0 right-0 h-[4px] z-30 bg-secondary origin-top-left;
+}
+.vertical-timeline::before {
+  @apply !bg-secondary;
+}
+.vertical-timeline-element-icon {
+  @apply !bg-white;
+}
+.vertical-timeline-element-content {
+  @apply !shadow-lg;
+}
+.Toastify__toast--success,
+.Toastify__toast--error {
+  @apply !font-poppins !whitespace-nowrap !max-w-full;
+}

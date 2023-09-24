@@ -1,0 +1,42 @@
+import {
+  CTA,
+  About,
+  Footer,
+  Hero,
+  Navbar,
+  Portfolio,
+  Testimonials,
+  Stacks,
+  ScrollButton,
+} from "./app/components";
+
+import { motion, useScroll, useSpring } from "framer-motion";
+import Experience from "./app/components/Experience";
+
+function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  return (
+    <>
+      <div className="w-full overflow-hidden">
+        <motion.div className="progress-bar" style={{ scaleX }} />
+        <Navbar />
+        <Hero />
+        <About />
+        <Stacks />
+        <Experience />
+        <ScrollButton />
+        <Portfolio />
+        <Testimonials />
+        <CTA />
+        <Footer />
+      </div>
+    </>
+  );
+}
+export default App;

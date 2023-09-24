@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bumblebee TLK (rigged)
+* source:	https://sketchfab.com/3d-models/bumblebee-tlk-rigged-b177c54cd3654300b5909d150086a4ec
+* author:	TransformerRig (https://sketchfab.com/gamestudio657)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bumblebee TLK (rigged)" (https://sketchfab.com/3d-models/bumblebee-tlk-rigged-b177c54cd3654300b5909d150086a4ec) by TransformerRig (https://sketchfab.com/gamestudio657) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
