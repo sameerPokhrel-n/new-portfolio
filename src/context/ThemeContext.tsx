@@ -1,9 +1,11 @@
-import React, { useState, useContext, useEffect, SetStateAction } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useInitialTheme } from "../hooks/useInitialTheme";
 
 const DefaultThemeContext = {
   theme: "",
-  setTheme: (theme: string) => {},
+  setTheme: (theme: string) => {
+    theme;
+  },
 };
 
 const ThemeContext = React.createContext(DefaultThemeContext);

@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/ThemeContext";
-import { CV, portfolio, portfolioImg } from "../../assets";
+import { CV } from "../../assets";
 import { Button } from "../../core/components/button";
 import { socialMediaLinks } from "../data";
 import { style } from "../styles";
@@ -28,35 +28,6 @@ export const slideIn = () => {
       },
     },
   };
-};
-
-const HeroImage = ({ theme }: { theme: string }) => {
-  return (
-    <div>
-      <div className="relative">
-        <motion.img
-          initial={{ opacity: 0, scale: 1.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="object-contain relative z-0"
-          src={portfolioImg}
-          alt="heroImage"
-        />
-        <div className="absolute bg-secondary p-2 top-[5rem] sm:top-[6rem] w-[62%] opacity-[0.5] h-[3rem] left-[5rem] sm:left-[6rem] z-10" />
-      </div>
-
-      <div className="flex flex-row  justify-evenly place-items-center gap-4 py-3">
-        {socialMediaLinks.map((link) => (
-          <a href={link.uri} key={link.id}>
-            <img
-              src={theme === "dark" ? link.iconlight : link.icondark}
-              className="h-[32px] w-[32px] object-contain"
-            />
-          </a>
-        ))}
-      </div>
-    </div>
-  );
 };
 
 export function Hero() {
