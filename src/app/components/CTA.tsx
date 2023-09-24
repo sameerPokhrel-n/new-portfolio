@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "../../core/components/button";
 import { style } from "../styles";
@@ -16,12 +17,13 @@ export function CTA() {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<ContactData>();
 
-  const handleForm = (data: ContactData) => {
-    console.log(data);
+  const [isSubmitting, setisSubmitting] = useState(false);
 
+  const handleForm = (data: ContactData) => {
+    setisSubmitting(true);
     emailjs
       .send(
         "service_v3ozoi7",
@@ -37,13 +39,13 @@ export function CTA() {
       )
       .then(
         () => {
-          toast.success(
-            `Thank you for your message,${data.name.toUpperCase()}.`
-          );
+          toast.success(`Thank you for your message.`);
           reset();
+          setisSubmitting(false);
         },
         (error) => {
           toast.error(error);
+          setisSubmitting(false);
         }
       );
   };
@@ -112,7 +114,7 @@ export function CTA() {
               className={`font-poppins w-full sm:w-max self-center disabled:cursor-not-allowed disabled:bg-secondaryDim`}
               disabled={isSubmitting}
             >
-              Contact Me
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
           </div>
         </form>

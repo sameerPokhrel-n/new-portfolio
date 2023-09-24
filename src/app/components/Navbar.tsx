@@ -11,7 +11,7 @@ export function Navbar() {
   return (
     <div className=" dark:bg-primaryDim  ss:px-16 sm:px-6 md:px-6  mx-auto flex flex-row items-center justify-between sm:justify-evenly p-2">
       <h4 className="text-darkPrimary dark:text-white md:text-lg sm:text-sm sm:whitespace-nowrap font-bold font-poppins cursor-pointer hover:text-secondary hover:dark:text-secondary">
-        <a href="/">{theme === "dark" ? "🌚" : "🌞"} Samir Pokhrel</a>
+        <a href="./">{theme === "dark" ? "🌚" : "🌞"} Samir Pokhrel</a>
       </h4>
       <div className="hidden sm:block">
         <ul className="list-none flex-1 flex flex-row md:gap-4 sm:gap-2">

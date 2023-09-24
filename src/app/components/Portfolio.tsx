@@ -5,7 +5,7 @@ import { style } from "../styles";
 import { motion, useAnimation } from "framer-motion";
 import { Button } from "../../core/components/button";
 
-export function Portfolio() {
+export default function Portfolio() {
   const [active, setActive] = useState("All");
   const reqProject =
     active === "All" ? projects : projects.filter((el) => el.key === active);
@@ -22,10 +22,7 @@ export function Portfolio() {
       >
         <h4 className={`${style.h4}`}>Projects</h4>
         <p className={`${style.paragraph}  max-w-xl`}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error sint
-          nesciunt voluptatum deleniti alias, esse facilis sit tenetur sunt
-          laborum consectetur, culpa quaerat cumque exercitationem voluptas,
-          dicta est eveniet ut.
+          Projects donne so far...
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-2 md:gap-3 pt-4">
           {projectCategory.map(({ id, name }) => (
@@ -58,6 +55,7 @@ export function Portfolio() {
                 loading="lazy"
                 alt={name}
               />
+
               <div className="absolute w-[100%] opacity-0 group-hover:opacity-100  transition duration-300 ease-in-out cursor-pointer rounded-xl inset-x-0 bottom-20 pt-30  flex place-items-center justify-center gap-4">
                 {name !== "Chat Application" ? (
                   <>

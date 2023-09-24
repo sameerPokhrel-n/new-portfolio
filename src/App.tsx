@@ -4,7 +4,7 @@ import {
   Footer,
   Hero,
   Navbar,
-  Portfolio,
+  PortfolioComponent,
   Testimonials,
   Stacks,
   ScrollButton,
@@ -12,6 +12,7 @@ import {
 
 import { motion, useScroll, useSpring } from "framer-motion";
 import Experience from "./app/components/Experience";
+import { Suspense } from "react";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full overflow-hidden">
+      <div className="dark:bg-primaryDim w-full overflow-hidden">
         <motion.div className="progress-bar" style={{ scaleX }} />
         <Navbar />
         <Hero />
@@ -31,7 +32,15 @@ function App() {
         <Stacks />
         <Experience />
         <ScrollButton />
-        <Portfolio />
+        <Suspense
+          fallback={
+            <div className="dark:text-white absolute top-24 left-20 text-darkPrimary m-auto flex justify-center items-center">
+              Loading....
+            </div>
+          }
+        >
+          <PortfolioComponent />
+        </Suspense>
         <Testimonials />
         <CTA />
         <Footer />
