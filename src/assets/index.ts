@@ -38,7 +38,10 @@ import company1 from "./techart.png";
 import company2 from "./wafttech.png";
 import company3 from "./orgware.png";
 
-import CV from "./cv.pdf";
+import ajayImg from "./testimonials1.jpg";
+import bibusImg from "./testimonials2.jpg";
+
+import CV from "./samir pokhrel-JS Dev.pdf";
 
 export {
   menu,
@@ -77,4 +80,6 @@ export {
   portfolio,
   company0,
   CV,
+  ajayImg,
+  bibusImg,
 };

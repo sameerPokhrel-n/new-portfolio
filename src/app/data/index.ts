@@ -1,5 +1,7 @@
 import {
+  ajayImg,
   angular,
+  bibusImg,
   company0,
   company1,
   company2,
@@ -119,28 +121,28 @@ export const techStack = [
 ];
 
 export const experiences = [
-  {
-    title: "Frontend Developer",
-    company_name: "IllinSo Technologies",
-    icon: company0,
-    iconBg: "#383E56",
-    date: "December 2020 - August 2021",
-    points: [
-      "Developing and maintaining web applications using HTML,CSS,Bootstrap,jQuery.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-    ],
-  },
+  //   {
+  //     title: "Frontend Developer",
+  //     company_name: "IllinSo Technologies",
+  //     icon: company0,
+  //     iconBg: "#383E56",
+  //     date: "December 2020 - August 2021",
+  //     points: [
+  //       "Developing and maintaining web applications using HTML,CSS,Bootstrap,jQuery.",
+  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //       "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     ],
+  //   },
   {
     title: "React JS Developer",
     company_name: "Techart Trekkies",
     icon: company1,
     iconBg: "#383E56",
-    date: "September 2021 - September 2022",
+    date: "September 2020 - September 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Manage application state using Redux Duck Patterns and API Integration.",
-      "Developed Modules like Leave Management System, Attendance, Role Management, Payroll System, Class Routine, Post Moderation",
+      "Developing Modules like Leave Management,Attendance,Role Management, Payroll System, Class Routine, Post and comment Moderation Modules",
     ],
   },
   {
@@ -148,7 +150,7 @@ export const experiences = [
     company_name: "WaftTech",
     icon: company2,
     iconBg: "#E6DEDD",
-    date: "October 2022 - April 2023",
+    date: "October 2021 - November 2023",
     points: [
       "Developing SEO friendly user facing e-commerce site using NEXT JS.",
       "Creating secure and efficient RESTful APIs using Express.js.",
@@ -163,12 +165,12 @@ export const experiences = [
     company_name: "Orgware Construct",
     icon: company3,
     iconBg: "#E6DEDD",
-    date: "May 2023 - Present",
+    date: "December 2022 - September 2023",
     points: [
       "Designing user registration and authentication flows, password recovery mechanisms and integrated third-party authentication providers (OAuth, social logins)",
       "Integrating the compiled Wasm module in application using JavaScript which significantly improves the performance of  the application.",
       "Designing a role-based access control system that allowed flexible permissions management and user privilege escalation, resulting in improved data security.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
     ],
   },
 ];
@@ -234,9 +236,8 @@ export const testimonials = [
     id: "1",
     name: "Ajay K. Mahato",
     position: "Sr.Backend Developer",
-    image: "",
+    image: ajayImg,
     company: "Techart Trekkies",
-    uri: "https://timerse.com/7-steps-to-boost-your-metabolism/",
     details:
       "Samir has an impressive command over React.js and its associated technologies. His coding skills are top-notch, and he consistently produce code that is clean, efficient, and highly maintainable. I have seen him tackle complex challenges with ease, always finding elegant solutions that elevate the quality of our applications.",
   },
@@ -244,8 +245,7 @@ export const testimonials = [
     id: "2",
     name: "Bibus Poudel",
     position: "UI/UX Designer",
-    image: "",
-    uri: "https://timerse.com/7-steps-to-boost-your-metabolism/",
+    image: bibusImg,
     company: "FuseMachines",
     details:
       "His ability to translate complex design concepts into clean and efficient code is truly commendable. I have witnessed him consistently deliver high-quality work, often going above and beyond to ensure the success of our projects",
@@ -254,9 +254,9 @@ export const testimonials = [
     id: "3",
     name: "Sujit Baniya",
     position: "CEO,Project Manger",
-    image: "",
+    image:
+      "https://imgs.search.brave.com/XokBZ7BHUyG8dA0f-GKPiOV69MW2BAAewH20dqsIbuc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yNzIt/MjcyMDY1Nl91c2Vy/LXByb2ZpbGUtZHVt/bXktaGQtcG5nLWRv/d25sb2FkLnBuZw",
     company: "Orgware Construct",
-    uri: "https://timerse.com/7-steps-to-boost-your-metabolism/",
     details:
       "Aside from his technical expertise, Samir is also a great team player. He actively collaborate with team members, share knowledge, and is always willing to lend a helping hand.",
   },

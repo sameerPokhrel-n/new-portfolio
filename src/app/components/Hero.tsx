@@ -34,9 +34,9 @@ export function Hero() {
   const { theme } = useTheme();
   return (
     <section
-      className={`mx-auto py-4  sm:my-0 dark:bg-primaryDim ${style.paddingX} flex flex-row flex-wrap items-center justify-between sm:justify-evenly gap-2  p-2`}
+      className={`mx-auto py-4  sm:my-0 dark:bg-primaryDim ${style.paddingX} flex flex-row flex-wrap sm:flex-none  items-center justify-between sm:justify-evenly gap-2  p-2`}
     >
-      <div className="flex flex-row sm:flex-col  justify-evenly place-items-center  gap-4 py-3">
+      <div className="flex flex-row ss:flex-col  justify-evenly place-items-center  gap-4 py-3">
         {socialMediaLinks.map((link) => (
           <a
             href={link.uri}
@@ -79,7 +79,7 @@ export function Hero() {
       </div>
 
       <motion.div
-        className="w-[340px]  h-[370px] md:h-[538px] md:w-[475px] lg:h-[850px] lg:w-[800px]"
+        className="w-[340px] h-[370px] ss:w-[688px] ss:h-[473px] md:w-[340px] md:h-[370px] xl:h-[850px] xl:w-[800px]"
         variants={slideIn()}
       >
         <HeroCanvas />

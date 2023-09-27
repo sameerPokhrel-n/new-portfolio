@@ -61,13 +61,12 @@ export function CTA() {
           Feel Free to send message...
         </p>
         <form autoComplete="off" onSubmit={handleSubmit(handleForm)}>
-          <div className="p-10 shadow-lg flex flex-col flex-wrap gap-4 justify-start">
+          <div className="p-10 w-[80vw]  md:w-[40vw] shadow-lg flex flex-col  gap-4 justify-start font-poppins">
             <>
               <input
                 type="text"
                 placeholder="Name"
                 {...register("name", { required: true })}
-                className={`flex-1 sm:w-96 font-poppins`}
               />
               <span
                 className={`font-bold ${
@@ -88,7 +87,6 @@ export function CTA() {
                 },
               })}
               placeholder="Enter Email Address"
-              className="flex-1 sm:w-96 font-poppins"
             />
             <span
               className={`font-bold ${
@@ -100,7 +98,6 @@ export function CTA() {
             <textarea
               placeholder="Enter Message"
               {...register("message", { required: true })}
-              className="flex-1 sm:w-96 font-poppins"
             />
             <span
               className={`font-bold ${

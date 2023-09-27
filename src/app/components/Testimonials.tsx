@@ -29,7 +29,7 @@ export function Testimonials() {
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:mx-12 text-center py-4">
           <Slider {...settings}>
             {testimonials.map(
-              ({ id, name, position, company, details, uri }) => (
+              ({ id, name, position, company, details, image }) => (
                 <div
                   key={id}
                   className="relative mx-auto mt-8 rounded-lg shadow-lg max-w-2xl font-poppins border-y-2 border-secondaryDim  hover:shadow-lg p-10 bg-gray-100 text-gray-700 dark:bg-primaryDim dark:text-white leading-snug flex flex-col justify-between cursor-pointer"
@@ -57,14 +57,14 @@ export function Testimonials() {
                     <div className="flex items-center justify-center">
                       <div>
                         <img
-                          className="w-12 h-12 rounded-full border-2 border-secondary"
-                          src="https://avatars2.githubusercontent.com/u/2741?s=64&v=4"
+                          className="w-12 h-12 scale-150 rounded-full border-2 border-secondary"
+                          src={image}
                         />
                       </div>
                       <div className="ml-4">
                         <div className="font-bold">{name}</div>
                         <div className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                          {position}, <a href={uri}>{company}</a>
+                          {position}, <a href={"#"}>{company}</a>
                         </div>
                       </div>
                     </div>

@@ -34,7 +34,7 @@ function App() {
         <ScrollButton />
         <Suspense
           fallback={
-            <div className="dark:text-white absolute top-24 left-20 text-darkPrimary m-auto flex justify-center items-center">
+            <div className="dark:text-white absolute top-126 left-20 text-darkPrimary m-auto flex justify-center items-center">
               Loading....
             </div>
           }
