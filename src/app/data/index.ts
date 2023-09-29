@@ -23,7 +23,6 @@ import {
   react,
   sql,
   twitter,
-  twitterlight,
   typescript,
 } from "../../assets";
 
@@ -65,7 +64,7 @@ export const socialMediaLinks = [
     id: "twitter",
     uri: "https://x.com/pokharelsameeer?t=4latVX4lKzMTxfpO_JZC2Q&s=08 ",
     icondark: twitter,
-    iconlight: twitterlight,
+    iconlight: twitter,
   },
   {
     id: "instagram",

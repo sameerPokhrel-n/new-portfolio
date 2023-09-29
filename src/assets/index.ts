@@ -12,8 +12,9 @@ import instagram from "./instagram.png";
 import instagramlight from "./lightinstagram.png";
 import linkedin from "./linkedin.png";
 import linkedinlight from "./lightlinkedin.png";
-import twitter from "./twitter.png";
-import twitterlight from "./lighttwitter.png";
+import twitter from "./xtwitter.png";
+// import twitter from "./xtwitterlight.png";
+import twitterlight from "./xtwitterdark.png";
 
 import javascript from "./javascript.png";
 import angular from "./angular.png";
