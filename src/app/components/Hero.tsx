@@ -34,7 +34,7 @@ export function Hero() {
   const { theme } = useTheme();
   return (
     <section
-      className={`mx-auto py-4  sm:my-0 dark:bg-primaryDim ${style.paddingX} flex flex-row flex-wrap sm:flex-none  items-center gap-4  sm:justify-evenly sm:gap-2  p-2`}
+      className={`mx-auto py-4  sm:my-0 dark:bg-primaryDim ${style.paddingX} flex flex-row flex-wrap sm:flex-none  items-center gap-4  sm:justify-evenly sm:gap-2`}
     >
       <div className="flex flex-row ss:flex-col  justify-evenly place-items-center  gap-4 py-3">
         {socialMediaLinks.map((link) => (
