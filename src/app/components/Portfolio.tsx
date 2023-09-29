@@ -22,7 +22,7 @@ export default function Portfolio() {
       >
         <h4 className={`${style.h4}`}>Projects</h4>
         <p className={`${style.paragraph}  max-w-xl`}>
-          Projects donne so far...
+          Projects done so far...
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-2 md:gap-3 pt-4">
           {projectCategory.map(({ id, name }) => (

@@ -57,13 +57,13 @@ export function Testimonials() {
                     <div className="flex items-center justify-center">
                       <div>
                         <img
-                          className="w-12 h-12 scale-150 rounded-full border-2 border-secondary"
+                          className={`w-12 h-12 scale-150 rounded-full border-2 border-secondary`}
                           src={image}
                         />
                       </div>
                       <div className="ml-4">
                         <div className="font-bold">{name}</div>
-                        <div className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                        <div className="text-sm text-gray-600 dark:text-gray-300 mt-1 ml-2">
                           {position}, <a href={"#"}>{company}</a>
                         </div>
                       </div>

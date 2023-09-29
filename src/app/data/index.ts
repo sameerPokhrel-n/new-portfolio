@@ -2,7 +2,6 @@ import {
   ajayImg,
   angular,
   bibusImg,
-  company0,
   company1,
   company2,
   company3,
@@ -233,7 +232,7 @@ export const projects = [
 ];
 export const testimonials = [
   {
-    id: "1",
+    id: 1,
     name: "Ajay K. Mahato",
     position: "Sr.Backend Developer",
     image: ajayImg,
@@ -242,7 +241,7 @@ export const testimonials = [
       "Samir has an impressive command over React.js and its associated technologies. His coding skills are top-notch, and he consistently produce code that is clean, efficient, and highly maintainable. I have seen him tackle complex challenges with ease, always finding elegant solutions that elevate the quality of our applications.",
   },
   {
-    id: "2",
+    id: 2,
     name: "Bibus Poudel",
     position: "UI/UX Designer",
     image: bibusImg,
@@ -251,7 +250,7 @@ export const testimonials = [
       "His ability to translate complex design concepts into clean and efficient code is truly commendable. I have witnessed him consistently deliver high-quality work, often going above and beyond to ensure the success of our projects",
   },
   {
-    id: "3",
+    id: 3,
     name: "Sujit Baniya",
     position: "CEO,Project Manger",
     image:
