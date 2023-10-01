@@ -54,10 +54,12 @@ export function Testimonials() {
                   <div className="mt-2">{details}</div>
                   <div>
                     <div className="mx-auto w-full border border-gray-300 my-8"></div>
-                    <div className="flex items-center justify-center">
-                      <div>
+                    <div className="flex-1 flex items-center justify-center">
+                      <div className="rounded-full">
                         <img
-                          className={`w-12 h-12 scale-150 rounded-full border-2 border-secondary`}
+                          className={`${
+                            id === 2 ? "w-[3.7rem]" : "w-20"
+                          } xs:w-12 xs:h-12  scale-150 rounded-full border-2 `}
                           src={image}
                         />
                       </div>

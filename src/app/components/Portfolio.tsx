@@ -41,42 +41,61 @@ export default function Portfolio() {
           ))}
         </div>
         <div className="flex flex-row flex-wrap gap-4 max-w-7xl justify-center pt-5">
-          {reqProject.map(({ name, id, icon, repoUri }) => (
-            <div
-              key={id}
-              className="border-none cursor-pointer border-secondaryDim rounded-md w-[300px] h-auto relative group "
+          {reqProject.map(({ name, id, icon, repoUri, preview, details }) => (
+            <motion.div
+              className="max-w-sm font-poppins cursor-pointer"
+              transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.07 }}
+              key={name}
             >
-              <motion.img
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                src={icon}
-                whileHover={{ scale: 1.1 }}
-                className="object-cover block h-auto w-[100%]"
-                loading="lazy"
-                alt={name}
-              />
+              <div className="bg-white dark:bg-primaryDim relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                <img
+                  className="rounded-t-lg h-[22vh] w-full object-cover"
+                  alt={name}
+                  src={icon}
+                  loading="lazy"
+                />
 
-              <div className="absolute w-[100%] opacity-0 group-hover:opacity-100  transition duration-300 ease-in-out cursor-pointer rounded-xl inset-x-0 bottom-20 pt-30  flex place-items-center justify-center gap-4">
-                {name !== "Chat Application" ? (
-                  <>
-                    <Button>
-                      <a
-                        href={repoUri}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        View Github
-                      </a>
-                    </Button>
-                  </>
-                ) : (
-                  <h3 className="font-poppins text-2xl text-white">
-                    Coming Soon
-                  </h3>
-                )}
+                <div className="py-6 px-8 rounded-lg bg-white dark:bg-primaryDim ">
+                  <h1 className="text-gray-700 dark:text-white font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">
+                    {name}
+                  </h1>
+                  <p className="text-gray-700 dark:text-white tracking-wide">
+                    {details}
+                  </p>
+                  <div className="flex justify-between  items-center">
+                    {id !== "chat-application" && (
+                      <>
+                        <Button
+                          size="sm"
+                          className="mt-6 py-2 px-4 bg-secondary dark:text-white dark:hover:bg-white hover:bg-white hover:text-slate-500 dark:hover:text-slate-500   rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                        >
+                          <a
+                            href={repoUri}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            View Repo
+                          </a>
+                        </Button>
+                        <Button
+                          size="sm"
+                          className="mt-6  py-2 px-4 bg-white text-slate-500 hover:dark:bg-secondary hover:bg-secondary dark:text-slate-500 hover:text-white dark:hover:text-white  font-poppins  rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                        >
+                          <a
+                            href={preview}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Visit Site
+                          </a>
+                        </Button>
+                      </>
+                    )}
+                  </div>
+                </div>
               </div>
-              <p className={`${style.paragraph} text-center`}>{name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

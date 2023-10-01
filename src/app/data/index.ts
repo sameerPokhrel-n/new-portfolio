@@ -40,12 +40,12 @@ export const navbarItems = [
     name: "Experience",
   },
   {
-    id: "projects",
-    name: "Projects",
-  },
-  {
     id: "testimonials",
     name: "Testimonials",
+  },
+  {
+    id: "projects",
+    name: "Projects",
   },
   {
     id: "contact",
@@ -202,42 +202,46 @@ export const projects = [
     icon: landingPage1,
     key: "Web Design",
     name: "Landing Page",
-    details: "FrontEnd Mentor Challenge",
+    details: "Mock the landing page from Free Front end mentor challenge.",
     repoUri: "https://github.com/sameerPokhrel-n/WLanding-Page",
+    preview: "https://cheerful-starburst-2248c8.netlify.app/",
   },
   {
-    id: "covid-tracker",
+    id: "dnd",
     icon: headerIcon,
     key: "React",
-    name: "Covid-Tracker",
-    details: "Track covid cases in accordance to the country",
-    repoUri: "https://github.com/sameerPokhrel-n/Covid-19",
+    name: "React Drag and Drop",
+    details: "Drag n Drop HTML elements on canvas and change its attributes.",
+    repoUri: "https://github.com/sameerPokhrel-n/react-grid-layout",
+    preview: "https://sparkling-pudding-ae055d.netlify.app/",
   },
   {
     id: "audio-recorder",
     icon: landingPage2,
     key: "Angular",
     name: "Audio Recorder",
-    details: "Record audio using microphone and download the recorded audio",
+    details: "Record audio using microphone and download the recorded audio.",
     repoUri: "https://github.com/sameerPokhrel-n/Voice-Recorder",
+    preview: "https://stupendous-chimera-136ea3.netlify.app/",
   },
   {
     id: "chat-application",
     icon: landingPage,
     key: "MERN",
     name: "Chat Application",
-    details: "Application integrated with chat - coming soon",
+    details:
+      "Chat app in development phase using MERN Stack where user can signup and login to create groups and chat in real time.",
   },
 ];
 export const testimonials = [
   {
     id: 1,
     name: "Ajay K. Mahato",
-    position: "Sr.Backend Developer",
+    position: "Backend Developer",
     image: ajayImg,
     company: "Techart Trekkies",
     details:
-      "Samir has an impressive command over React.js and its associated technologies. His coding skills are top-notch, and he consistently produce code that is clean, efficient, and highly maintainable. I have seen him tackle complex challenges with ease, always finding elegant solutions that elevate the quality of our applications.",
+      "Samir has an impressive command over React.js and its associated technologies. His coding skills are top-notch, and he consistently produce code that is clean, efficient, and highly maintainable.",
   },
   {
     id: 2,
@@ -246,12 +250,12 @@ export const testimonials = [
     image: bibusImg,
     company: "FuseMachines",
     details:
-      "His ability to translate complex design concepts into clean and efficient code is truly commendable. I have witnessed him consistently deliver high-quality work, often going above and beyond to ensure the success of our projects",
+      "His ability to translate complex design concepts into clean and efficient code is truly commendable. I have witnessed him consistently deliver high-quality work, to ensure the success of the projects",
   },
   {
     id: 3,
     name: "Sujit Baniya",
-    position: "CEO,Project Manger",
+    position: "CEO-Project Manger",
     image:
       "https://imgs.search.brave.com/XokBZ7BHUyG8dA0f-GKPiOV69MW2BAAewH20dqsIbuc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yNzIt/MjcyMDY1Nl91c2Vy/LXByb2ZpbGUtZHVt/bXktaGQtcG5nLWRv/d25sb2FkLnBuZw",
     company: "Orgware Construct",
