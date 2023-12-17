@@ -1,4 +1,5 @@
 import {
+  artHaus,
   ajayImg,
   angular,
   bibusImg,
@@ -21,6 +22,7 @@ import {
   mongodb,
   nodejs,
   react,
+  reactDashboard,
   sql,
   twitter,
   typescript,
@@ -214,6 +216,24 @@ export const projects = [
     details: "Drag n Drop HTML elements on canvas and change its attributes.",
     repoUri: "https://github.com/sameerPokhrel-n/react-grid-layout",
     preview: "https://sparkling-pudding-ae055d.netlify.app/",
+  },
+  {
+    id: "dashboard",
+    icon: reactDashboard,
+    key: "React",
+    name: "React Dashboard",
+    details: "Dashboard with react tanstack table",
+    repoUri: "https://github.com/sameerPokhrel-n/test-ui",
+    preview: "https://testuii.netlify.app/dashboard",
+  },
+  {
+    id: "dashboard",
+    icon: artHaus,
+    key: "React",
+    name: "Art Haus Landing page",
+    details: "Responsive Art Haus landing page template",
+    repoUri: "",
+    preview: "https://arthaus.netlify.app/",
   },
   {
     id: "audio-recorder",

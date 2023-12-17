@@ -42,7 +42,10 @@ import company3 from "./orgware.png";
 import ajayImg from "./testimonials1.jpg";
 import bibusImg from "./testimonials2.jpg";
 
-import CV from "./samir pokhrel-JS Dev.pdf";
+import CV from "./Samir Pokhrel-JSDEV.pdf";
+
+import artHaus from "./ArtHaus.png";
+import reactDashboard from "./reactDashboard.png";
 
 export {
   menu,
@@ -83,4 +86,6 @@ export {
   CV,
   ajayImg,
   bibusImg,
+  artHaus,
+  reactDashboard,
 };

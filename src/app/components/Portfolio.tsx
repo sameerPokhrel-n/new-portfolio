@@ -80,7 +80,7 @@ export default function Portfolio() {
                         </Button>
                         <Button
                           size="sm"
-                          className="mt-6  py-2 px-4 bg-white text-slate-500 hover:dark:bg-secondary hover:bg-secondary dark:text-slate-500 hover:text-white dark:hover:text-white  font-poppins  rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                          className="mt-6 py-2 px-4 bg-white !text-slate-500  hover:dark:bg-secondary hover:bg-secondary dark:text-slate-500 hover:dark:!text-white hover:!text-white  font-poppins  rounded-lg shadow-md hover:shadow-lg transition duration-300"
                         >
                           <a
                             href={preview}
