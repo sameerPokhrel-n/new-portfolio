@@ -59,7 +59,7 @@ export function Hero() {
           </strong>
           <br />
           <strong className="dark:text-white text-darkPrimary font-bold text-4xl">
-            Javascript Developer
+            Full Stack Web Developer
           </strong>
         </h4>
         <div className="max-w-[200px] my-2 border-t-4 dark:border-secondary border-secondary" />

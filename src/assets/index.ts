@@ -43,9 +43,11 @@ import ajayImg from "./testimonials1.jpg";
 import bibusImg from "./testimonials2.jpg";
 
 import CV from "./Samir Pokhrel-JSDEV.pdf";
+// import CV from "./Samir_Pokhrel_CV.pdf";
 
 import artHaus from "./ArtHaus.png";
-import reactDashboard from "./reactDashboard.png";
+// import reactDashboard from "./reactDashboard.png";
+import reactDashboard from "./dashboard.jpg";
 
 export {
   menu,

@@ -3,6 +3,7 @@ import {
   ajayImg,
   angular,
   bibusImg,
+  company0,
   company1,
   company2,
   company3,
@@ -121,36 +122,25 @@ export const techStack = [
 ];
 
 export const experiences = [
-  //   {
-  //     title: "Frontend Developer",
-  //     company_name: "IllinSo Technologies",
-  //     icon: company0,
-  //     iconBg: "#383E56",
-  //     date: "December 2020 - August 2021",
-  //     points: [
-  //       "Developing and maintaining web applications using HTML,CSS,Bootstrap,jQuery.",
-  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //       "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     ],
-  //   },
   {
-    title: "React JS Developer",
-    company_name: "Techart Trekkies",
-    icon: company1,
-    iconBg: "#383E56",
-    date: "September 2020 - September 2021",
+    title: "Full stack Developer",
+    company_name: "Orgware Construct",
+    icon: company3,
+    iconBg: "#E6DEDD",
+    date: "May 2023 - Currently working",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Manage application state using Redux Duck Patterns and API Integration.",
-      "Developing Modules like Leave Management,Attendance,Role Management, Payroll System, Class Routine, Post and comment Moderation Modules",
+      "Designing user registration and authentication flows, password recovery mechanisms and integrated third-party authentication providers (OAuth, social logins)",
+      "Integrating the compiled Wasm module in application using JavaScript which significantly improves the performance of  the application.",
+      "Designing a role-based access control system that allowed flexible permissions management and user privilege escalation, resulting in improved data security.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
     ],
   },
   {
-    title: "Javascript Developer",
+    title: "React JS Developer",
     company_name: "WaftTech",
     icon: company2,
     iconBg: "#E6DEDD",
-    date: "October 2021 - November 2023",
+    date: "October 2022 - April 2023",
     points: [
       "Developing SEO friendly user facing e-commerce site using NEXT JS.",
       "Creating secure and efficient RESTful APIs using Express.js.",
@@ -159,18 +149,29 @@ export const experiences = [
       "Synchronizing Stripe with firebase for user's authentication and authorization using cloud functions.",
     ],
   },
+  {
+    title: "React  Developer",
+    company_name: "Techart Trekkies",
+    icon: company1,
+    iconBg: "#383E56",
+    date: "September 2021 - September 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Manage application state using Redux Duck Patterns and API Integration.",
+      "Developing Modules like Leave Management,Attendance,Role Management, Payroll System, Class Routine, Post and comment Moderation Modules",
+    ],
+  },
 
   {
-    title: "Full stack Developer",
-    company_name: "Orgware Construct",
-    icon: company3,
-    iconBg: "#E6DEDD",
-    date: "December 2022 - September 2023",
+    title: "Front-end Developer",
+    company_name: "IllinSo Technologies",
+    icon: company0,
+    iconBg: "#383E56",
+    date: "May 2018 - August 2021",
     points: [
-      "Designing user registration and authentication flows, password recovery mechanisms and integrated third-party authentication providers (OAuth, social logins)",
-      "Integrating the compiled Wasm module in application using JavaScript which significantly improves the performance of  the application.",
-      "Designing a role-based access control system that allowed flexible permissions management and user privilege escalation, resulting in improved data security.",
+      "Developing and maintaining web applications using HTML,CSS,Bootstrap,jQuery.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
 ];
@@ -250,7 +251,9 @@ export const projects = [
     key: "MERN",
     name: "Chat Application",
     details:
-      "Chat app in development phase using MERN Stack where user can signup and login to create groups and chat in real time.",
+      "Chat app using MERN Stack with the features: User Authentication,One-to-One Real-Time Messaging,Sound Notifications,Typing Status",
+    repoUri: "",
+    preview: "https://chit-chat01.netlify.app/",
   },
 ];
 export const testimonials = [
