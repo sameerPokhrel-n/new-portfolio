@@ -27,6 +27,13 @@ import {
   sql,
   twitter,
   typescript,
+  python,
+  snowflake,
+  powerBI,
+  tableau,
+  hadoop,
+  aws,
+  azure,
 } from "../../assets";
 
 export const navbarItems = [
@@ -38,10 +45,10 @@ export const navbarItems = [
     id: "stacks",
     name: "Stacks",
   },
-  {
-    id: "experience",
-    name: "Experience",
-  },
+  //   {
+  //     id: "experience",
+  //     name: "Experience",
+  //   },
   {
     id: "testimonials",
     name: "Testimonials",
@@ -84,32 +91,8 @@ export const socialMediaLinks = [
 ];
 export const techStack = [
   {
-    id: "html",
-    icon: html,
-  },
-  {
-    id: "css",
-    icon: css,
-  },
-  {
-    id: "javascript",
-    icon: javascript,
-  },
-  {
-    id: "typescript",
-    icon: typescript,
-  },
-  {
-    id: "react",
-    icon: react,
-  },
-  {
-    id: "angular",
-    icon: angular,
-  },
-  {
-    id: "nodejs",
-    icon: nodejs,
+    id: "python",
+    icon: python,
   },
   {
     id: "sql",
@@ -118,6 +101,30 @@ export const techStack = [
   {
     id: "mongodb",
     icon: mongodb,
+  },
+  {
+    id: "hadoop",
+    icon: hadoop,
+  },
+  {
+    id: "snowflake",
+    icon: snowflake,
+  },
+  {
+    id: "aws",
+    icon: aws,
+  },
+  {
+    id: "azure",
+    icon: azure,
+  },
+  {
+    id: "tabluea",
+    icon: tableau,
+  },
+  {
+    id: "powerBI",
+    icon: powerBI,
   },
 ];
 
@@ -204,8 +211,9 @@ export const projects = [
     id: "landing-page",
     icon: landingPage1,
     key: "Web Design",
-    name: "Landing Page",
-    details: "Mock the landing page from Free Front end mentor challenge.",
+    name: "Real-time Data Pipeline ",
+    details:
+      "Built a streaming data pipeline using Kafka, Spark, and AWS Lambda to process real-time events.",
     repoUri: "https://github.com/sameerPokhrel-n/WLanding-Page",
     preview: "https://cheerful-starburst-2248c8.netlify.app/",
   },
@@ -213,8 +221,9 @@ export const projects = [
     id: "dnd",
     icon: headerIcon,
     key: "React",
-    name: "React Drag and Drop",
-    details: "Drag n Drop HTML elements on canvas and change its attributes.",
+    name: "Data Warehouse Implementation",
+    details:
+      "Designed and implemented a data warehouse in Snowflake for business intelligence reporting.",
     repoUri: "https://github.com/sameerPokhrel-n/react-grid-layout",
     preview: "https://sparkling-pudding-ae055d.netlify.app/",
   },
@@ -222,8 +231,9 @@ export const projects = [
     id: "dashboard",
     icon: reactDashboard,
     key: "React",
-    name: "React Dashboard",
-    details: "Dashboard with react tanstack table",
+    name: "ETL Pipeline for Sales Data ",
+    details:
+      "Developed an ETL pipeline using Airflow and Python to extract, transform, and load sales data.",
     repoUri: "https://github.com/sameerPokhrel-n/test-ui",
     preview: "https://testuii.netlify.app/dashboard",
   },
@@ -231,8 +241,9 @@ export const projects = [
     id: "dashboard",
     icon: artHaus,
     key: "React",
-    name: "Art Haus Landing page",
-    details: "Responsive Art Haus landing page template",
+    name: "API Data Integration",
+    details:
+      "Created a system to fetch and store external API data into a PostgreSQL database for further analysis",
     repoUri: "",
     preview: "https://arthaus.netlify.app/",
   },
@@ -240,49 +251,79 @@ export const projects = [
     id: "audio-recorder",
     icon: landingPage2,
     key: "Angular",
-    name: "Audio Recorder",
-    details: "Record audio using microphone and download the recorded audio.",
+    name: "BigQuery Analytics Dashboard ",
+    details: " Used Google BigQuery to analyze and visualize large datasets",
     repoUri: "https://github.com/sameerPokhrel-n/Voice-Recorder",
     preview: "https://stupendous-chimera-136ea3.netlify.app/",
   },
-  {
-    id: "chat-application",
-    icon: landingPage,
-    key: "MERN",
-    name: "Chat Application",
-    details:
-      "Chat app using MERN Stack with the features: User Authentication,One-to-One Real-Time Messaging,Sound Notifications,Typing Status",
-    repoUri: "",
-    preview: "https://chit-chat01.netlify.app/",
-  },
+  //   {
+  //     id: "chat-application",
+  //     icon: landingPage,
+  //     key: "MERN",
+  //     name: "Chat Application",
+  //     details:
+  //       "Chat app using MERN Stack with the features: User Authentication,One-to-One Real-Time Messaging,Sound Notifications,Typing Status",
+  //     repoUri: "",
+  //     preview: "https://chit-chat01.netlify.app/",
+  //   },
 ];
 export const testimonials = [
   {
     id: 1,
     name: "Ajay K. Mahato",
-    position: "Backend Developer",
+    position: "Sr. Data Engineer",
     image: ajayImg,
     company: "Techart Trekkies",
     details:
-      "Samir has an impressive command over React.js and its associated technologies. His coding skills are top-notch, and he consistently produce code that is clean, efficient, and highly maintainable.",
+      "One of Samir’s strongest qualities is his ability to break down complex data problems and find innovative solutions. I’ve seen him tackle messy datasets, resolve inconsistencies, and create well-structured data pipelines that significantly improved business reporting accuracy. ",
   },
-  {
-    id: 2,
-    name: "Bibus Poudel",
-    position: "UI/UX Designer",
-    image: bibusImg,
-    company: "FuseMachines",
-    details:
-      "His ability to translate complex design concepts into clean and efficient code is truly commendable. I have witnessed him consistently deliver high-quality work, to ensure the success of the projects",
-  },
+  //   {
+  //     id: 2,
+  //     name: "Bibus Poudel",
+  //     position: "UI/UX Designer",
+  //     image: bibusImg,
+  //     company: "FuseMachines",
+  //     details:
+  //       "His ability to translate complex design concepts into clean and efficient code is truly commendable. I have witnessed him consistently deliver high-quality work, to ensure the success of the projects",
+  //   },
   {
     id: 3,
     name: "Sujit Baniya",
-    position: "CEO-Project Manger",
+    position: "Project Manger",
     image:
       "https://imgs.search.brave.com/XokBZ7BHUyG8dA0f-GKPiOV69MW2BAAewH20dqsIbuc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yNzIt/MjcyMDY1Nl91c2Vy/LXByb2ZpbGUtZHVt/bXktaGQtcG5nLWRv/d25sb2FkLnBuZw",
     company: "Orgware Construct",
     details:
-      "Aside from his technical expertise, Samir is also a great team player. He actively collaborate with team members, share knowledge, and is always willing to lend a helping hand.",
+      "Samir has a knack for collaboration and knowledge-sharing. His contributions to our team discussions on data governance and best practices have been incredibly valuable. He is always open to feedback and takes initiative in implementing the best solutions for our data infrastructure.",
   },
 ];
+// export const testimonials = [
+//   {
+//     id: 1,
+//     name: "Ajay K. Mahato",
+//     position: "Backend Developer",
+//     image: ajayImg,
+//     company: "Techart Trekkies",
+//     details:
+//       "Samir has an impressive command over React.js and its associated technologies. His coding skills are top-notch, and he consistently produce code that is clean, efficient, and highly maintainable.",
+//   },
+//   {
+//     id: 2,
+//     name: "Bibus Poudel",
+//     position: "UI/UX Designer",
+//     image: bibusImg,
+//     company: "FuseMachines",
+//     details:
+//       "His ability to translate complex design concepts into clean and efficient code is truly commendable. I have witnessed him consistently deliver high-quality work, to ensure the success of the projects",
+//   },
+//   {
+//     id: 3,
+//     name: "Sujit Baniya",
+//     position: "CEO-Project Manger",
+//     image:
+//       "https://imgs.search.brave.com/XokBZ7BHUyG8dA0f-GKPiOV69MW2BAAewH20dqsIbuc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yNzIt/MjcyMDY1Nl91c2Vy/LXByb2ZpbGUtZHVt/bXktaGQtcG5nLWRv/d25sb2FkLnBuZw",
+//     company: "Orgware Construct",
+//     details:
+//       "Aside from his technical expertise, Samir is also a great team player. He actively collaborate with team members, share knowledge, and is always willing to lend a helping hand.",
+//   },
+// ];

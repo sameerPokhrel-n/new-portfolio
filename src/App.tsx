@@ -11,7 +11,7 @@ import {
 } from "./app/components";
 
 import { motion, useScroll, useSpring } from "framer-motion";
-import Experience from "./app/components/Experience";
+// import Experience from "./app/components/Experience";
 import { Suspense } from "react";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         <Hero />
         <About />
         <Stacks />
-        <Experience />
+        {/* <Experience /> */}
         <ScrollButton />
         <Suspense
           fallback={
