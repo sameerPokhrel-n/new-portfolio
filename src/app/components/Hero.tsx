@@ -59,17 +59,15 @@ export function Hero() {
           </strong>
           <br />
           <strong className="dark:text-white text-darkPrimary font-bold text-4xl">
-            Aspiring Data Engineer
+            Full Stack Web Developer
           </strong>
         </h4>
         <div className="max-w-[200px] my-2 border-t-4 dark:border-secondary border-secondary" />
         <p className="max-w-md dark:text-white md:text-xl text-darkPrimary font-poppins leading-20">
-          Data Engineering and Analytics enthusiast passionate about
-          transforming raw data into meaningful insights. Skilled in designing
-          scalable data pipelines, optimizing databases, and leveraging big data
-          technologies to drive business decisions.
+          Experienced web developer with strong proficiency in developing modern
+          web application using MERN Stack.
         </p>
-        {/* <div className="max-w-md sm:space-y-6 p-2">
+        <div className="max-w-md sm:space-y-6 p-2">
           <motion.button whileHover={{ scale: 1.1 }}>
             <Button className="font-poppins">
               <a href={CV} download>
@@ -77,7 +75,7 @@ export function Hero() {
               </a>
             </Button>
           </motion.button>
-        </div> */}
+        </div>
       </div>
 
       <motion.div

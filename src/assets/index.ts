@@ -23,15 +23,8 @@ import html from "./html.png";
 import css from "./css.png";
 import nodejs from "./nodejs.png";
 import react from "./react.png";
-import typescript from "./typescript.png";
 import sql from "./sql.png";
-import python from "./python.png";
-import hadoop from "./hadoop.png";
-import aws from "./aws.png";
-import azure from "./azure.png";
-import tableau from "./tableau.png";
-import powerBI from "./powerBI.png";
-import snowflake from "./snowflake.png";
+import typescript from "./typescript.png";
 
 import landingpage from "./landingpage.png";
 import landingPage1 from "./landingPage1.jpg";
@@ -97,11 +90,4 @@ export {
   bibusImg,
   artHaus,
   reactDashboard,
-  python,
-  snowflake,
-  powerBI,
-  tableau,
-  hadoop,
-  aws,
-  azure,
 };
