@@ -26,9 +26,11 @@ import react from "./react.png";
 import sql from "./sql.png";
 import typescript from "./typescript.png";
 
-import landingpage from "./landingpage.png";
+import audioRecorder from "./landingpage2.jpg";
 import landingPage1 from "./landingPage1.jpg";
-import landingPage2 from "./landingPage2.jpg";
+import landingPage2 from "./landingPage2.webp";
+import landingPage3 from "./landingPage3.webp";
+import landingPage4 from "./landingPage4.webp";
 import landingPage from "./landingPage.jpg";
 import webdesign from "./webdesign.png";
 import design1 from "./design1.png";
@@ -73,11 +75,13 @@ export {
   react,
   sql,
   typescript,
-  landingpage,
+  audioRecorder,
   webdesign,
   design1,
   landingPage1,
   landingPage2,
+  landingPage3,
+  landingPage4,
   landingPage,
   headerIcon,
   company1,
