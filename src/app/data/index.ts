@@ -8,12 +8,10 @@ import {
   company2,
   company3,
   css,
-  facebook,
-  facebooklight,
+
   headerIcon,
   html,
-  instagram,
-  instagramlight,
+
   javascript,
   landingPage3,
   landingPage1,
