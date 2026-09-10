@@ -9,8 +9,8 @@ export function Navbar() {
   const [toggle, setToggle] = useState(false);
   const { theme, setTheme } = useTheme();
   return (
-    <div className=" dark:bg-primaryDim  ss:px-16 sm:px-6 md:px-6  mx-auto flex flex-row items-center justify-between sm:justify-evenly p-2">
-      <h4 className="text-darkPrimary dark:text-white md:text-lg sm:text-sm sm:whitespace-nowrap font-bold font-poppins cursor-pointer hover:text-secondary hover:dark:text-secondary">
+    <div className=" dark:bg-primaryDim  ss:px-16 sm:px-6 md:px-6  mx-auto flex flex-row items-center justify-between sm:justify-evenly p-4 sm:py-6 sm:gap-2 w-full">
+      <h4 className="text-secondary dark:text-secondary md:text-lg sm:text-sm sm:whitespace-nowrap font-bold font-poppins cursor-pointer hover:text-darkPrimary hover:dark:text-white transition ease-in-out duration-300">
         <a href="./">{theme === "dark" ? "🌚" : "🌞"} Samir Pokhrel</a>
       </h4>
       <div className="hidden sm:block">

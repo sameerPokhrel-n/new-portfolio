@@ -20,9 +20,9 @@ export default function Portfolio() {
         className={`${style.flexCol} place-items-center space-y-6 sm:space-y-4`}
       >
         <h4 className={`${style.h4}`}>Projects</h4>
-        <p className={`${style.paragraph}  max-w-xl`}>
+        {/* <p className={`${style.paragraph}  max-w-xl`}>
           Projects done so far...
-        </p>
+        </p> */}
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-2 md:gap-3 pt-4">
           {projectCategory.map(({ id, name }) => (
             <motion.div
@@ -100,6 +100,7 @@ export default function Portfolio() {
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.05 }}
               key={`${id}_${name}`}
+              onClick={() => window.open(preview, "_blank")}
             >
               <img
                 src={icon}

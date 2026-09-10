@@ -4,6 +4,7 @@ import dark from "./dark.png";
 import light from "./sun.png";
 import portfolioImg from "./portfolioImg.png";
 import portfolio from "./pp.jpg";
+import github from "./github.webp";
 
 import portfolioImg1 from "./portfolio1.png";
 import facebook from "./facebook.png";
@@ -44,7 +45,8 @@ import company3 from "./orgware.png";
 import ajayImg from "./testimonials1.jpg";
 import bibusImg from "./testimonials2.jpg";
 
-import CV from "./Samir Pokhrel-JSDEV.pdf";
+// import CV from "./Samir Pokhrel-JSDEV.pdf";
+import CV from "./SamirPokhrel.pdf";
 // import CV from "./Samir_Pokhrel_CV.pdf";
 
 import artHaus from "./ArtHaus.png";
@@ -94,4 +96,5 @@ export {
   bibusImg,
   artHaus,
   reactDashboard,
+  github
 };

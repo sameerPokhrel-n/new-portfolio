@@ -34,7 +34,7 @@ export function Hero() {
   const { theme } = useTheme();
   return (
     <section
-      className={`mx-auto py-4  sm:my-0 dark:bg-primaryDim ${style.paddingX} flex flex-row flex-wrap sm:flex-none  items-center gap-4  sm:justify-evenly sm:gap-2`}
+      className={`mx-auto py-20  sm:my-0 dark:bg-primaryDim ${style.paddingX} flex flex-row flex-wrap sm:flex-none  items-center gap-4  sm:justify-evenly sm:gap-2`}
     >
       <div className="flex flex-row ss:flex-col  justify-evenly place-items-center  gap-4 py-3">
         {socialMediaLinks.map((link) => (
@@ -59,13 +59,13 @@ export function Hero() {
           </strong>
           <br />
           <strong className="dark:text-white text-darkPrimary font-bold text-4xl">
-            Full Stack Web Developer
+            Software Engineer
           </strong>
         </h4>
         <div className="max-w-[200px] my-2 border-t-4 dark:border-secondary border-secondary" />
         <p className="max-w-md dark:text-white md:text-xl text-darkPrimary font-poppins leading-20">
-          Experienced web developer with strong proficiency in developing modern
-          web application using MERN Stack.
+          Experienced software engineer with strong proficiency in developing
+          modern web and mobile applications using MERN and React Native stacks.
         </p>
         <div className="max-w-md sm:space-y-6 p-2">
           <motion.button whileHover={{ scale: 1.1 }}>

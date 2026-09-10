@@ -30,6 +30,7 @@ import {
   sql,
   twitter,
   typescript,
+  github
 } from "../../assets";
 
 export const navbarItems = [
@@ -60,12 +61,12 @@ export const navbarItems = [
 ];
 
 export const socialMediaLinks = [
-  {
-    id: "facebook",
-    uri: "https://www.facebook.com/samir.pokharel.3?mibextid=ZbWKwL",
-    icondark: facebook,
-    iconlight: facebooklight,
-  },
+  // {
+  //   id: "facebook",
+  //   uri: "https://www.facebook.com/samir.pokharel.3?mibextid=ZbWKwL",
+  //   icondark: facebook,
+  //   iconlight: facebooklight,
+  // },
   {
     id: "twitter",
     uri: "https://x.com/pokharelsameeer?t=4latVX4lKzMTxfpO_JZC2Q&s=08 ",
@@ -73,10 +74,10 @@ export const socialMediaLinks = [
     iconlight: twitter,
   },
   {
-    id: "instagram",
-    uri: "./",
-    icondark: instagram,
-    iconlight: instagramlight,
+    id: "github",
+    uri: "https://github.com/sameerPokhrel-n",
+    icondark: github,
+    iconlight: github,
   },
   {
     id: "linkedin",
@@ -130,7 +131,7 @@ export const experiences = [
     company_name: "Orgware Construct",
     icon: company3,
     iconBg: "#E6DEDD",
-    date: "May 2023 - Currently working",
+    date: "May 2023 - May 2024",
     points: [
       "Designing user registration and authentication flows, password recovery mechanisms and integrated third-party authentication providers (OAuth, social logins)",
       "Integrating the compiled Wasm module in application using JavaScript which significantly improves the performance of  the application.",
